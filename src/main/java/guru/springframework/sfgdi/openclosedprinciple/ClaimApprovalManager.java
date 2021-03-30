@@ -7,4 +7,10 @@ public class ClaimApprovalManager {
             System.out.println("ClaimApprovalManager: Valid Claim. Currently processing claim for approval...");
         }
     }
+
+    public void processVehicleClaim(VehicleInsuranceSurveyor surveyor) {
+        if (surveyor.isValidClaim()) {
+            System.out.println("ClaimApprovalManager: Valid Claim. Currently processing claim for approval...");
+        }
+    }
 }
