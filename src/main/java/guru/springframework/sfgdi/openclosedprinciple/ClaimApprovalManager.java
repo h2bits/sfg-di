@@ -2,13 +2,7 @@ package guru.springframework.sfgdi.openclosedprinciple;
 
 public class ClaimApprovalManager {
 
-    public void processHealthClaim(HealthInsuranceSurveyor surveyor) {
-        if (surveyor.isValidClaim()) {
-            System.out.println("ClaimApprovalManager: Valid Claim. Currently processing claim for approval...");
-        }
-    }
-
-    public void processVehicleClaim(VehicleInsuranceSurveyor surveyor) {
+    public void processClaim(InsuranceSurveyor surveyor) {
         if (surveyor.isValidClaim()) {
             System.out.println("ClaimApprovalManager: Valid Claim. Currently processing claim for approval...");
         }
