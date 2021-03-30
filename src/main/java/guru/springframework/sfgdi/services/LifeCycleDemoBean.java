@@ -51,4 +51,12 @@ public class LifeCycleDemoBean implements InitializingBean, DisposableBean, Bean
     public void preDestroy() {
         System.out.println("## The Pre Destroy annotated method has been called");
     }
+
+    public void beforeInit() {
+        System.out.println("## - Before Init - Called by Bean Post Processor");
+    }
+
+    public void afterInit() {
+        System.out.println("## - After Init - Called by Bean Post Processor");
+    }
 }
