@@ -1,4 +1,7 @@
-package guru.springframework.sfgdi.dependencyinversionprinciple;
+package guru.springframework.sfgdi.dependencyinversionprinciple.highlevel;
+
+import guru.springframework.sfgdi.dependencyinversionprinciple.highlevel.Switch;
+import guru.springframework.sfgdi.dependencyinversionprinciple.highlevel.Switchable;
 
 public class ElectricPowerSwitch implements Switch {
     public Switchable client;
