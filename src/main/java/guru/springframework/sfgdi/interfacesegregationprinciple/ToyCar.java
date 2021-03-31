@@ -1,6 +1,6 @@
 package guru.springframework.sfgdi.interfacesegregationprinciple;
 
-public class ToyHouse implements Toy {
+public class ToyCar implements Toy, Movable {
     double price;
     String color;
 
@@ -15,7 +15,12 @@ public class ToyHouse implements Toy {
     }
 
     @Override
+    public void move() {
+        System.out.println("ToyCar: Start moving car.");
+    }
+
+    @Override
     public String toString() {
-        return "ToyHouse: Toy house - Price: " + price + " Color: " + color;
+        return "ToyCar: Movable Toy car - Price: " + price + " Color: " + color;
     }
 }
